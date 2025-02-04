@@ -90,17 +90,37 @@
 
     /* Hero Section */
     .hero {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: url('https://img.freepik.com/free-photo/man-with-copy-space-futuristic-device_23-2148864987.jpg?semt=ais_hybrid')
-        no-repeat center center/cover;
-      height: 100vh; /* Full height of the screen */
-      width: 100%;
-      padding: 50px;
-      color: black;
-      position: relative;
-    }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh; /* Full height of the screen */
+        width: 100%;
+        padding: 50px;
+        color: black;
+        position: relative;
+      }
+      
+      .hero-text {
+        flex: 1; /* Take up available space */
+      }
+      
+      .hero-image {
+        flex: 1; /* Take up available space */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .hero-image img {
+        width: 100%; /* Increase the width of the image to fill the container */
+        height: 100%; /* Increase the height of the image to fill the container */
+        object-fit: cover; /* Ensure the image fills the container without distortion */
+        border-radius: 15px; /* Add rounded corners if desired */
+      }
+      
+      
+      
+      
     .innovation-title {
       font-size: 56px !important; /* Adjust this size to your preference */
       font-weight: bold;
