@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar .logo img {
+    height: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .cta-button .btn-primary {
+    background-color: #d32f2f;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e8f0fe;
+    padding: 40px;
+  }
+  
+  .hero-text h1 {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .hero-text p {
+    font-size: 18px;
+    color: #666;
+    margin: 20px 0;
+  }
+  
+  .hero-image img {
+    width: 400px;
+  }
+  
+  .why-ixrlabs {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: white;
+  }
+  
+  .why-ixrlabs h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .feature {
+    text-align: center;
+  }
+  
+  .feature img {
+    width: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .feature h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .benefits {
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .benefits h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .benefit-cards {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .benefit-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .benefit-card img {
+    width: 50px;
+    margin-bottom: 15px;
+  }
+  
+  .benefit-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .benefit-card p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .btn-secondary {
+    background-color: #0277bd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+  
