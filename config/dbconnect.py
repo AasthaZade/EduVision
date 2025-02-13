@@ -16,11 +16,10 @@ def connect_db():
     except Exception as e:
         print(e)
 
-    return client.CodeHub
+    return client.EduVision
 
 class SingletonMeta(type):
     _instances = {}
-
     def __call__(cls, *args, **kwargs):
         if cls not in cls._instances:
             instance = super().__call__(*args, **kwargs)
