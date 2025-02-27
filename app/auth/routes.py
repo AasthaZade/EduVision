@@ -25,13 +25,13 @@ def login():
         login_user(user)
 
         print("Logged in user:", user)
-        print("Session data:", session)  # Check what's stored
+        print("Session data:", session)
         if user.role == "supervisor":
-            return redirect(url_for("supervisor.dashboard"))  # Redirect to supervisor dashboard
+            return redirect(url_for("supervisor.dashboard"))
         elif user.role == "industry_professional":
-            return redirect(url_for("industry.dashboard"))  # Redirect to industry professional dashboard
+            return redirect(url_for("industry.dashboard"))
         else:
-            return redirect(url_for("learner.dashboard"))  # Default home page
+            return redirect(url_for("learner.dashboard"))
 
     return render_template("login.html")
 
