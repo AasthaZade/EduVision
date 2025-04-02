@@ -7,3 +7,7 @@ from app.auth.decorators import role_required
 @home_bp.route("/index", methods=["GET"])
 def index():
     return render_template("index.html")
+
+@home_bp.route("/lab", methods=["GET"])
+def lab():
+    return render_template("lab.html") 

@@ -1,9 +1,11 @@
 {% extends 'base.html' %}
+
 {% block head %}
     <title>{{ course.title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/course.css') }}">
 {% endblock %}
+
 {% block body %}
-    
 <div class="container">
     <h1>{{ course.title }}</h1>
     <p><strong>Instructor:</strong> {{ course.instructor }}</p>
@@ -43,8 +45,6 @@
         <p>No additional resources available.</p>
     {% endif %}
 
-    <a href="{{ url_for('learner.courses') }}">← Back to Courses</a>
+    <a href="{{ url_for('learner.courses') }}" class="back-link">← Back to Courses</a>
 </div>
-
-
 {% endblock %}

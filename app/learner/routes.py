@@ -33,9 +33,9 @@ def courses():
 @learner_bp.route("/courses/enroll/<course_id>", methods=["POST"])
 @login_required
 def enroll(course_id):
-    # Ensure course_id is a valid ObjectId
+    # Ensure course_id is a valid ObjectId ( NO wow )
     try:
-        course_id = ObjectId(course_id)
+        course_id = course_id
     except:
         flash("Invalid course ID!", "error")
         return redirect(url_for("learner.courses"))
