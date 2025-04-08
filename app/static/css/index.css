@@ -1,168 +1,173 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    /* General Styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: Arial, sans-serif;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-    ul {
-      list-style: none;
-    }
-    h1,
-    h2,
-    h3 {
-      margin: 10px 0;
-    }
+body {
+  font-family: Arial, sans-serif;
+}
 
-    /* Navbar Styles */
-    .brand-name a {
-      font-family: 'Arial', sans-serif;
-      font-size: 2rem;
-      font-weight: bold;
-      color: #005488; /* Text color */
-      letter-spacing: 2px;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    .brand-name a:hover {
-      color: #003d66; /* Highlight color on hover */
-    }
-    .navbar {
-      background-color: white;
-      display: flex;
-      justify-content: space-between; /* Distribute items across navbar */
-      align-items: center;
-      padding: 10px 20px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 1000;
-    }
-    .navbar .logo img {
-      max-width: 100px;
-      /* Logo is aligned to the left, no changes needed */
-    }
-    .nav-links {
-      display: flex;
-      gap: 15px;
-      /* Keep the navigation items in the center */
-    }
-    .nav-links li {
-      display: inline;
-    }
-    .nav-links a {
-      color: #005488;
-      font-weight: bold;
-      font-size: 1.2rem; /* Increased font size for navigation links */
-      padding: 5px 10px; /* Added padding for better clickable area */
-    }
-    .nav-links a:hover {
-      background-color: #005488; /* Background color when hovering */
-      color: white; /* Text color changes to white */
-      border-radius: 5px;
-    }
-    .login-btn {
-      background-color: #005488;
-      color: white;
-      padding: 10px 20px;
-      font-size: 1.2rem;
-      font-weight: bold;
-      text-transform: uppercase;
-      border-radius: 25px; /* More pronounced curve */
-      text-decoration: none;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-    .login-btn:hover {
-      background-color: #003d66; /* Darken on hover */
-      transform: translateY(-2px); /* Slight lift on hover */
-    }
-    .login-btn:active {
-      transform: translateY(1px); /* Button presses down on click */
-    }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-    /* Hero Section */
-    .hero {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100vh; /* Full height of the screen */
-        width: 100%;
-        padding: 50px;
-        color: black;
-        position: relative;
-      }
-      
-      .hero-text {
-        flex: 1; /* Take up available space */
-      }
-      
-      .hero-image {
-        flex: 1; /* Take up available space */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      .hero-image img {
-        width: 100%; /* Increase the width of the image to fill the container */
-        height: 100%; /* Increase the height of the image to fill the container */
-        object-fit: cover; /* Ensure the image fills the container without distortion */
-        border-radius: 15px; /* Add rounded corners if desired */
-      }
-      
-      
-      
-      
-    .innovation-title {
-      font-size: 56px !important; /* Adjust this size to your preference */
-      font-weight: bold;
-      color: white; /* Make sure the text color contrasts well with the background */
-      margin-bottom: 10px; /* Adjust spacing below the title */
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Optional: text shadow for readability */
-    }
-    .explore-btn {
-      display: inline-block;
-      padding: 15px 30px;
-      background-color: #005488;
-      color: white;
-      font-size: 30px;
-      border-radius: 5px;
-      text-transform: uppercase;
-      font-weight: bold;
-      margin-top: 20px;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-    .explore-btn:hover {
-      background-color: #003d66; /* Darken on hover */
-      transform: translateY(-2px); /* Slight lift on hover */
-    }
-    .explore-btn:active {
-      transform: translateY(1px); /* Button presses down on click */
-    }
-    .hero .hero-text {
-      max-width: 50%;
-    }
-    .hero h1 {
-      font-size: 2.5rem;
-    }
-    .hero p {
-      color: #005488;
-      font-size: 1.2rem;
-      margin-top: 10px;
-    }
-    .hero-image img {
-      max-width: 300px;
-      border-radius: 10px;
-    }
+ul {
+  list-style: none;
+}
 
+h1, h2, h3 {
+  margin: 10px 0;
+}
+
+/* Navbar Styles */
+.brand-name a {
+  font-family: 'Arial', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #005488;
+  letter-spacing: 2px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.brand-name a:hover {
+  color: #003d66;
+}
+
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  height: 75px;
+}
+
+.navbar .logo img {
+  max-width: 100px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: #005488;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+}
+
+.nav-links a:hover {
+  background-color: #005488;
+  color: white;
+  border-radius: 5px;
+}
+
+.login-btn {
+  background-color: #005488;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #003d66;
+  transform: translateY(-2px);
+}
+
+.login-btn:active {
+  transform: translateY(1px);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 50px;
+  color: rgb(18, 18, 18);
+  background-color: #fffcfc;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+/* Image directly inside .hero */
+.hero > img {
+  width: 85%;           /* ✅ Image now takes 85% width */
+  height: auto;
+  max-width: 600px;
+  object-fit: contain;
+  border-radius: 15px;
+  background-color: #333;
+  flex: 0 0 auto;
+}
+
+    
+    
+  .innovation-title {
+    font-size: 56px !important; /* Adjust this size to your preference */
+    font-weight: bold;
+    color: white; /* Make sure the text color contrasts well with the background */
+    margin-bottom: 10px; /* Adjust spacing below the title */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Optional: text shadow for readability */
+  }
+  .explore-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #005488;
+    color: white;
+    font-size: 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .explore-btn:hover {
+    background-color: #003d66; /* Darken on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+  .explore-btn:active {
+    transform: translateY(1px); /* Button presses down on click */
+  }
+  .hero .hero-text {
+    max-width: 50%;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    color: #005488;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  .hero-image img {
+    max-width: 300px;
+    border-radius: 10px;
+  }
     /* Section 1 */
     .section1 {
       background-color: white;
